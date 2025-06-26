@@ -1,0 +1,17 @@
+.tran{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tran button{
+    width: 100px;
+}
+.cont1{
+    box-shadow: 0 0 20px rgba(21, 102, 102, 0.579);
+    padding: 5px;
+    border-radius: 15px;
+    border: none !important;
+    width: 450px;
+    padding-left: 10px;
+    min-height: 100vh;
+}

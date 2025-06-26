@@ -1,0 +1,17 @@
+.buton {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 50%;
+} 
+.tbn {
+  width: 200px;
+}
+.con{
+    min-height: 100vh !important;
+    max-width: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
