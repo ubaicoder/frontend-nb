@@ -84,12 +84,18 @@ function CustomerDashboard() {
           </div>
         </div>
         {message && <div className="alert alert-info mt-3">{message}</div>}
-
-        {/* Transaction history */}
-        {userData && <Transactions userId={userData.id} token={token}  refresh={refresh} />}
+        
+        {/* Transaction history     refresh is used re-fetch data in transaction component means reload and show new data*/}
+        {userData && <Transactions userId={userData.id} token={token}  refresh={refresh} />} 
       </div>
     </>
   );
 }
 
 export default CustomerDashboard;
+// If you reload the page, the transaction history will be fetched again despite the refresh state being not changed. This happens because by default, the useEffect hook runs after the component is mounted and if the dependencies are not changed then also it will run for once.Even though refresh doesn’t change on refresh, React still runs the effect once by default when the component first mounts.
+// So on page refresh:
+// 1. The component mounts.
+// 2. The useEffect hook runs, fetching the transaction history.
+// 3. The component re-renders with the fetched data.
+

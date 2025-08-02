@@ -36,17 +36,17 @@ function Signup() {
   return (
     <>
       <form onSubmit={handleFormSubmit}>
-        <div className="container cont">
+        <div className="container cont  shadow-lg">
           <div className="row">
             <Link className="text-decoration-none" to={'/'}>Home</Link>
             <h2 className="text-center fw-bold">Sign Up</h2>
-            <div className="col-auto">
+            <div className="col-sm-12 col-lg-12">
               <label htmlFor="username" className="form-label px-2 mt-1">
                 Username
               </label>
               <input
                 type="text"
-                className="form-control px-2"
+                className="form-control px-2 text-center"
                 required
                 placeholder="Enter here"
                 name="username"
@@ -56,13 +56,13 @@ function Signup() {
             </div>
           </div>
           <div className="row">
-            <div className="col-auto">
+            <div className="col-sm-12 col-lg-12">
               <label htmlFor="password" className="form-label px-2 mt-1">
                 Password
               </label>
               <input
                 type="password"
-                className="form-control px-2"
+                className="form-control px-2 text-center"
                 required
                 placeholder="Enter here"
                 name="password"
@@ -72,7 +72,7 @@ function Signup() {
             </div>
           </div>
           <div className="row">
-            <div className="col-auto">
+            <div className="col-sm-12">
               <select
                 name="role"
                 id="my-dropdown"
@@ -86,15 +86,15 @@ function Signup() {
               </select>
             </div>
           </div>
-          <div className="row mt-3">
-            <div className="col-auto">
+          <div className="row mt-4">
+            <div className="col-sm-12 d-flex justify-content-center align-items-center flex-wrap">
               <button className="btn btn-primary text-center ntb" type="submit">
                 Sign Up
               </button>
             </div>
           </div>
           <div className="row">
-            <div className="col-auto">
+            <div className="col-sm-12  d-flex justify-content-center flex-wrap">
               <p className="mt-3">
                 Already have an account?{" "}
                 <Link

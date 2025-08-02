@@ -28,10 +28,10 @@ function BankLogin() {
   return (
     <>
       <form onSubmit={handleFormSubmit}>
-        <div className="container cont">
+        <div className="container cont shadow-lg">
           <div className="row">
             <h2 className="fw-bold text-center">Banker Login</h2>
-            <div className="col-auto">
+            <div className="col-lg-12 col-sm-12">
               <label htmlFor="username" className="form-label px-2 mt-1">
                 Username
               </label>
@@ -47,7 +47,7 @@ function BankLogin() {
             </div>
           </div>
           <div className="row">
-            <div className="col-auto">
+            <div className="col-lg-12 col-sm-12">
               <label htmlFor="password" className="form-label px-2 mt-1">
                 Password
               </label>
@@ -63,7 +63,7 @@ function BankLogin() {
             </div>
           </div>
           <div className="row">
-            <div className="col-auto">
+            <div className="col-sm-12 d-flex justify-content-center align-items-center flex-wrap">
               <button
                 className="btn btn-primary text-center mt-3 ntb"
                 type="submit"

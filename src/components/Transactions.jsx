@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./Transactions.css";
 
 function Transactions({ userId, token, refresh }) {
   const [transactions, setTransactions] = useState([]);
@@ -16,7 +17,7 @@ function Transactions({ userId, token, refresh }) {
   }, [userId, token,refresh]);
 
   return (
-    <div>
+    <div className="container mt-5 trans">
       <h3 className="mb-3 mt-5 fw-bold">Transaction History</h3>
       <ul className="list-group">
         {transactions.map((txn) => (
