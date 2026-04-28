@@ -1,12 +1,70 @@
-# React + Vite
+Overview
+The Banking Web Application is a full-stack web project designed to simulate core banking operations such as user authentication, deposits, withdrawals, and transaction tracking. The application provides a secure and user-friendly interface for customers and bank employees to manage financial activities efficiently.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠️ Tech Stack
+Frontend
+HTML5
+CSS3
+JavaScript
+React.js
+Bootstrap
 
-Currently, two official plugins are available:
+Backend
+Node.js
+Express.js
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Database
+MySQL
 
-## Expanding the ESLint configuration
+Features
+User Authentication (Login & Signup for Customers & Bankers)
+Deposit and Withdrawal Functionality
+Transaction History Tracking
+Real-Time Data Handling using REST APIs
+Role-based Access (Customer / Banker)
+Responsive UI for mobile and desktop
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Project Structure
+project/
+├── client/        # React Frontend
+├── server/        # Node.js Backend
+├── .env           # Environment Variables
+├── package.json
+
+Installation & Setup
+1. Clone the repository
+git clone https://github.com/your-username/banking-app.git
+cd banking-app
+2. Install dependencies
+For Backend
+cd server
+npm install
+For Frontend
+cd client
+npm install
+3. Setup Environment Variables
+Create a .env file in the server folder and add:
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=yourpassword
+DB_NAME=bankdb
+PORT=5000
+4. Start the Application
+Start Backend
+cd server
+node server.js
+Start Frontend
+cd client
+npm start
+
+Future Scope
+Integration with real banking APIs
+Advanced security (JWT, encryption)
+Analytics dashboard for users
+Mobile app version
+Deployment on cloud (AWS / Render)
+
+Acknowledgements:
+This project was built for learning full-stack development and understanding real-world banking workflows.
+
