@@ -37,6 +37,11 @@ The Banking Web Application is a full-stack web project designed to simulate cor
 - Auth0
 
 ---
+ ### Future Scope
+- 🔐 Advanced Authentication (JWT, Encryption)
+- 📈 User Analytics Dashboard
+- ☁️ Cloud Deployment (AWS / Render)
+- 📱 Mobile Application Version
 
 ## 📂 Project Structure
 project/
@@ -46,21 +51,27 @@ project/
 └── package.json
 ---
 
-## ⚙️ Installation & Setup
+### ⚙️ Installation
 
-### 1. Clone Repository
 ```bash
+# Clone repo
 git clone https://github.com/ubaicoder/frontend-nb.git
-
 cd frontend-nb
+
+# Install backend
 cd server
 npm install
 
+# Install frontend
 cd ../client
 npm install
 
-Future Scope
-🔐 Advanced Authentication (JWT, Encryption)
-📈 User Analytics Dashboard
-☁️ Cloud Deployment (AWS / Render)
-📱 Mobile Application Version
+# Run backend
+cd ../server
+node server.js
+
+# Run frontend
+cd ../client
+npm start
+
+---
